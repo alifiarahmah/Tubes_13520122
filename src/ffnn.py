@@ -50,13 +50,13 @@ for i in range(len(arr_input)):
 
         # loop for every neuron
         for k in range(len(current_data[0])):
-            print("neuron", (current_data[0][k]))
 
-            # TO DO: Refactoring error of change value in numpy
-            # if (arr_activation[j] == "linear"):
-            #     current_data[0][k] = helper.linear(current_data)
-            # if (arr_activation[j] == "relu"):
-            #     current_data[0][k] = helper.relu(current_data)
+            if (arr_activation[j] == "linear"):
+                current_data[0][k] = helper.linear(current_data[0][k])
+            if (arr_activation[j] == "relu"):
+                current_data[0][k] = helper.relu(current_data[0][k])
+            if (arr_activation[j] == "sigmoid"):
+                current_data[0][k] = helper.sigmoid(current_data[0][k])
 
     output.append(current_data)
 
