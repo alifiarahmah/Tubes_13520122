@@ -19,5 +19,5 @@ def sigmoid(net):
 def softmax(net_i, arr_net):
     net_sum = 0
     for i in arr_net:
-        net_sum += i
+        net_sum += exp(i)
     return (exp(net_i))/net_sum
