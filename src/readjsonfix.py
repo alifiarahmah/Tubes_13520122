@@ -42,10 +42,10 @@ for i in arr_input:
 
 # predict
 # get count layer
-cnt_layer = data["case"]["model"]["input_size"]
+cnt_layer = len(data["case"]["model"]["layers"])
 print(cnt_layer)
 
-current_data = [arr_input[2]]
+current_data = [arr_input[0]]
 print(current_data)
 
 for i in range(cnt_layer):
