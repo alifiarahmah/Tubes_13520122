@@ -28,9 +28,9 @@ def multiplyMatrix(m1, m2):
     for i in range(len(m1)):
         m3.append([])
         for j in range(len(m2[0])):
-            m3[i].append(0.0)
+            m3[i].append(0)
             for k in range(len(m1[0])):
-                m3[i][j] += float(m1[i][k] * m2[k][j])
+                m3[i][j] += m1[i][k] * m2[k][j]
 
     return m3
 
