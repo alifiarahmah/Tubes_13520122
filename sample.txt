@@ -1,5 +1,0 @@
-3
-1 linear
-5 sigmoid
-2 relu
-15
