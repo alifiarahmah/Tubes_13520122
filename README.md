@@ -4,6 +4,6 @@ How to run
 
 1. Clone this repository, go to the folder, run command below
 ```
-python python .\src\ffnn.py
+python .\src\ffnn.py
 ```
 2. Input file's name in test folder
