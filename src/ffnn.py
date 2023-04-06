@@ -48,6 +48,7 @@ for i in range(len(arr_input)):
         hj = np.dot(current_data, mat_weight[j]) + bias[j]
         current_data = hj
 
+        current_data_cpy = current_data.copy()
         # loop for every neuron
         for k in range(len(current_data[0])):
 
@@ -59,7 +60,9 @@ for i in range(len(arr_input)):
                 current_data[0][k] = helper.sigmoid(current_data[0][k])
             if (arr_activation[j] == "softmax"):
                 current_data[0][k] = helper.softmax(
-                    current_data[0][k], current_data[0])
+                    current_data_cpy[0][k], current_data_cpy[0])
+
+        
 
     output.append(current_data)
 
