@@ -4,6 +4,6 @@ How to run
 
 1. Clone this repository, go to the folder, run command below
 ```
-python .\src\ffnn.py
+python .\src\forward_propagation.py
 ```
 2. Input file's name in test folder
